@@ -1,0 +1,13 @@
+h2 {
+	font-size:35px;
+	color:white;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.guesses{
+	width:380px;
+	height:80px;
+	background-color: #66ff33;
+	margin:auto;
+}

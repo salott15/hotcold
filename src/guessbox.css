@@ -1,0 +1,18 @@
+.box {
+	margin:auto;
+	width:380px;
+	height:380px;
+	background-color: #4d4dff;
+	margin-bottom: 100px;
+}
+
+.results{
+	height:72px;
+	background-color: #ff751a;
+}
+
+header {
+	font-size: 30px;
+	color:white;
+	text-align: center;
+}
