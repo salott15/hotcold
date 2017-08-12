@@ -53,7 +53,8 @@ export default class App extends React.Component {
   		<div className={"board"}>
   			<Header onNewGame={() => this.newGame()}/>
   			<GuessBox results={this.state.results}
-          onGuess={(guess) => this.guess(guess)}/>
+          onGuess={(guess) => this.guess(guess)}
+          guesses={this.state.guesses}/>
   		</div>)
   }
 }

@@ -5,17 +5,23 @@ import GuessForm from './guessform.js';
 import GuessCount from './guesscount.js';
 import GuessList from './guesslist.js';
 
-export default function GuessBox(props) {
+export default class GuessBox extends React.Component {
+	constructor(props){
+		super(props);
+	}
+
+	render(){
 
 	return(
 			<div className={"box"}>
 				<div className={"results"}>
 					<br />
-					<header>{props.results}</header>
+					<header>{this.props.results}</header>
 				</div>
-				<GuessForm onGuess={props.onGuess} />
-				<GuessCount count={this.state.guesses.length} />
-				<GuessList guesses={this.state.guesses}/>
+				<GuessForm onGuess={this.props.onGuess} />
+				<GuessCount count={this.props.guesses.length} />
+				<GuessList guesses={this.props.guesses}/>
 			</div>
 			)
+}
 }

@@ -6,8 +6,9 @@ h2 {
 }
 
 .guesses{
-	width:380px;
+	width:89.5%;
 	height:80px;
 	background-color: #66ff33;
 	margin:auto;
+	overflow:auto;
 }
